@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг» [![Build status][travis-image]][travis-url]
 
 * Студент: [Kristina Zakharova](https://up.htmlacademy.ru/javascript/18/user/891155).
-* Наставник: `Неизвестно`.
+* Наставник: `Иван Марченко`.
 
 ---
 
