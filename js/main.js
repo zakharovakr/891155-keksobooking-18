@@ -31,6 +31,23 @@ for (var i = 0; i < 8; i++){
 
 document.querySelector('.map').classList.remove('map--faded');
 
+
+var similarOfferTemplate = document.querySelector('#pin')
+    .content
+    .querySelector('.map__pin');
+
 var renderSimilarOffer = function (offer) {
-  var offerElement =
+  var offerElement = similarOfferTemplate.cloneNode(true);
+
+  offerElement.querySelector(map__pin).img.src = offer.photos;
+  offerElement.querySelector(map__pin).img.alt = offer.description;
+
+  return offerElement;
 };
+
+var fragment = document.createDocumentFragment();
+for (var j = 0; j < similarOffers.length; j++) {
+  fragment.appendChild(renderSimilarOffer(similarOffers[j]));
+}
+similarListElement.appendChild(fragment);
+
